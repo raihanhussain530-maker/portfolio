@@ -200,7 +200,7 @@ window.PROJECTS = [
     "Three European case studies",
     "A critical look at the limits of degrowth"
   ],
-  pages: ['humanities-2-2-02', 'humanities-2-2-03', 'humanities-2-2-04', 'humanities-2-2-05', 'humanities-2-2-08'],
+  pages: ['humanities-2-2-01', 'humanities-2-2-02', 'humanities-2-2-03', 'humanities-2-2-04', 'humanities-2-2-07'],
   files: [['Humanities 2.2 essay (PDF, 1 MB)', '1_7aOjzGdq3Ej4DUrZhpoe3WZu32iQnXl', 'pdf/humanities-2-2-essay.pdf']]
 },
 {
