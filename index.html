@@ -5,12 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#021D1B">
 <meta name="description" content="Architecture portfolio of Raihan Hussain, Manchester School of Architecture.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Raihan Hussain Architecture">
+<meta property="og:description" content="Studio, technical and written work from my architecture degree at the Manchester School of Architecture.">
+<meta property="og:url" content="https://raihanhussain530-maker.github.io/portfolio/">
+<meta property="og:image" content="https://raihanhussain530-maker.github.io/portfolio/img/hero/cafe-window-sm.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <title>Raihan Hussain Architecture</title>
-<link rel="icon" href="data:,">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23038C65'/%3E%3Cstop offset='1' stop-color='%23034159'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Helvetica,Arial,sans-serif' font-size='27' font-weight='700' text-anchor='middle' fill='%23F5DC9A' letter-spacing='-1'%3ERH%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script>document.documentElement.classList.add('js')</script>
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__rvok)document.documentElement.classList.remove('js')},3000)</script>
 <style>
 /* VOICE  polished, calm, professional: an architecture portfolio presented like a product launch
    IDEA   one deep-teal world lit by green and blue glows, with gold as the craftsman's accent
@@ -18,7 +24,8 @@
    COLOUR deep teal #021D1B ground, emerald #0f5c45 / #038C65, blue #034159, gold #E2B65B, soft green #A9FFCB; white text
    TYPE   SF Pro where available, Inter elsewhere; huge display words in a white-to-gold gradient for depth
    LAYOUT stacked gradient tiles, a two-up glass grid, glass card rails; one column on phones */
-:root{color-scheme:dark;--base:#021D1B;--em:#0f5c45;--green:#038C65;--teal:#02735E;--blue:#034159;--blue2:#1b6b8a;--mint:#A9FFCB;--gold:#E2B65B;--gold-l:#F5DC9A;--gold-d:#B8892E;--ink:#ffffff;--mut:rgba(233,246,240,.74);--line:rgba(169,255,203,.14);--gline:rgba(226,182,91,.38);--glass:linear-gradient(160deg,rgba(3,140,101,.20),rgba(3,65,89,.34));--goldgrad:linear-gradient(135deg,#F8E6B0 0%,#E2B65B 50%,#C4923A 100%);--textgrad:linear-gradient(95deg,#ffffff 0%,#dcfbea 48%,#F5DC9A 100%)}
+html,body{background:#021D1B}
+:root{color-scheme:dark;--ease-out:cubic-bezier(.23,1,.32,1);--ease-in:cubic-bezier(.22,1,.36,1);--ease-drawer:cubic-bezier(.32,.72,0,1);--base:#021D1B;--em:#0f5c45;--green:#038C65;--teal:#02735E;--blue:#034159;--blue2:#1b6b8a;--mint:#A9FFCB;--gold:#E2B65B;--gold-l:#F5DC9A;--gold-d:#B8892E;--ink:#ffffff;--mut:rgba(233,246,240,.74);--line:rgba(169,255,203,.14);--gline:rgba(226,182,91,.38);--glass:linear-gradient(160deg,rgba(3,140,101,.20),rgba(3,65,89,.34));--goldgrad:linear-gradient(135deg,#F8E6B0 0%,#E2B65B 50%,#C4923A 100%);--textgrad:linear-gradient(95deg,#ffffff 0%,#dcfbea 48%,#F5DC9A 100%)}
 *{box-sizing:border-box;min-width:0}
 html{scroll-padding-top:60px;-webkit-text-size-adjust:100%;background:var(--base)}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -27,31 +34,51 @@ body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;ba
 body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .hero::after,.tile.t1::after,.tile.t2::after,.tile.t3::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 img{max-width:100%;height:auto;display:block}
+::selection{background:rgba(226,182,91,.38);color:#fff}
+.skip{position:absolute;left:16px;top:-80px;z-index:100;background:var(--goldgrad);color:#06201a;font-weight:600;padding:10px 18px;border-radius:980px;transition:top .2s var(--ease-out)}
+.skip:focus{top:12px;text-decoration:none}
 a{color:var(--gold-l);text-decoration:none}
 a:hover{text-decoration:underline}
 button{font:inherit;color:inherit;letter-spacing:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
 h1,h2,h3{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif;font-weight:600;letter-spacing:-.025em;margin:0;text-wrap:balance}
-.gn{position:sticky;top:0;z-index:20;background:rgba(2,29,27,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(226,182,91,.18)}
+.gn{position:sticky;top:0;z-index:20;background:rgba(2,29,27,.30);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid transparent;transition:background-color .35s var(--ease-out),border-color .35s var(--ease-out),box-shadow .35s var(--ease-out)}
+.gn.scrolled{background:rgba(2,29,27,.80);border-bottom-color:rgba(226,182,91,.20);box-shadow:0 10px 30px rgba(0,0,0,.25)}
 .gn .in{max-width:1024px;margin:0 auto;display:flex;align-items:center;gap:20px;height:52px;padding:0 max(16px,env(safe-area-inset-left,0px))}
 .gn .brand{font-weight:600;color:#fff;font-size:15px;white-space:nowrap;margin-right:auto;flex:none}
 .gn nav{display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
 .gn nav::-webkit-scrollbar{display:none}
-.gn nav a{color:#fff;opacity:.78;font-size:13px;white-space:nowrap;padding:16px 0;flex:none}
+.gn nav a{color:#fff;opacity:.78;font-size:13px;white-space:nowrap;padding:16px 0;flex:none;position:relative;transition:opacity .2s ease,color .2s ease}
+.gn nav a::after{content:"";position:absolute;left:0;right:0;bottom:11px;height:1.5px;border-radius:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease-out)}
+.gn nav a[aria-current=true]{opacity:1;color:var(--gold-l)}
+.gn nav a[aria-current=true]::after{transform:scaleX(1)}
 .gn nav a:hover{opacity:1;text-decoration:none;color:var(--gold-l)}
+@media(hover:hover) and (pointer:fine){.gn nav a:hover::after{transform:scaleX(1)}}
 .gn .share-btn{flex:none;background:var(--goldgrad);color:#06201a;border:0;border-radius:980px;font-size:13px;font-weight:600;padding:0 14px;height:32px;cursor:pointer}
 .gn .share-btn:hover{filter:brightness(1.07)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;border-radius:980px;background:var(--goldgrad);color:#06201a;font-weight:600;font-size:17px;border:0;cursor:pointer;box-shadow:0 8px 24px rgba(226,182,91,.22);transition:filter .2s,transform .2s,box-shadow .2s}
-.btn:hover{filter:brightness(1.07);text-decoration:none;transform:translateY(-1px);box-shadow:0 10px 30px rgba(226,182,91,.32)}
+.gn .share-btn{transition:transform .16s var(--ease-out),filter .2s ease}
+.gn .share-btn:active{transform:scale(.96)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;border-radius:980px;background:var(--goldgrad);color:#06201a;font-weight:600;font-size:17px;border:0;cursor:pointer;box-shadow:0 8px 24px rgba(226,182,91,.22);gap:8px;transition:transform .16s var(--ease-out),filter .2s ease,box-shadow .25s ease,background-color .2s ease,color .2s ease}
+.btn .ar{flex:none;transition:transform .25s var(--ease-out)}
+.btn:active{transform:scale(.97)}
+.btn:hover{text-decoration:none}
+@media(hover:hover) and (pointer:fine){.btn:hover{filter:brightness(1.07);box-shadow:0 10px 30px rgba(226,182,91,.32)}.btn:hover .ar{transform:translateX(3px)}.btn:hover .ar.ext{transform:translate(2px,-2px)}}
 .btn.line{background:rgba(255,255,255,.04);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.62)}
-.btn.line:hover{background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1.5px var(--gold-l);color:var(--gold-l)}
+@media(hover:hover) and (pointer:fine){.btn.line:hover{background:rgba(255,255,255,.10);box-shadow:inset 0 0 0 1.5px var(--gold-l);color:var(--gold-l)}}
 .links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:26px}
 .hero{color:#fff;text-align:center;padding:clamp(64px,9vw,120px) 0 0;overflow:hidden;position:relative;background:radial-gradient(70% 55% at 50% 0%,rgba(3,140,101,.50),transparent 72%),radial-gradient(45% 45% at 100% 70%,rgba(3,65,89,.55),transparent 70%),radial-gradient(35% 30% at 0% 80%,rgba(226,182,91,.10),transparent 70%)}
 .hero-copy{position:relative;z-index:1;padding:0 16px;transform-origin:50% 0;will-change:transform,opacity}
 .hero h1{font-size:clamp(58px,11.5vw,168px);line-height:.92;letter-spacing:-.045em;font-weight:700;color:#fff}
 .hero .sub{font-size:clamp(19px,2.4vw,30px);line-height:1.18;margin:18px auto 0;max-width:26ch;color:rgba(233,246,240,.86);letter-spacing:-.015em}
 .hero-media{position:relative;z-index:2;margin:clamp(48px,6vw,80px) 0 0;height:clamp(340px,60vw,860px);overflow:hidden;clip-path:inset(0 var(--hx,5vw) 0 var(--hx,5vw) round var(--hr,28px));will-change:clip-path}
-.hero-media img{width:100%;height:100%;object-fit:cover;transform:scale(var(--hs,1.1));will-change:transform}
+.hero-media img{width:100%;height:100%;object-fit:cover;transform:scale(1.1);will-change:transform}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding:0 .02em .1em;margin-bottom:-.1em}
+.hero h1 .w>span{display:inline-block}
+@keyframes wordRise{from{transform:translateY(108%)}to{transform:none}}
+@keyframes blurRise{from{opacity:0;translate:0 22px;filter:blur(8px)}to{opacity:1;translate:0 0;filter:blur(0)}}
+@keyframes mediaRise{from{opacity:0;translate:0 48px}to{opacity:1;translate:0 0}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:no-preference){.hero h1 .w>span{animation:wordRise 1.05s var(--ease-in) both;animation-delay:var(--d,0ms)}.hero .sub{animation:blurRise .9s var(--ease-in) .42s both}.hero .links{animation:blurRise .9s var(--ease-in) .56s both}.hero-media{animation:mediaRise 1.3s var(--ease-in) .62s both}.hero-cap{animation:fadeIn .8s ease 1.1s both}.gn{animation:fadeIn .6s ease both}}
 .hero-cap{font-size:14px;color:var(--gold-l);opacity:.85;margin:0;padding:16px 16px 28px}
 .tile{text-align:center;padding:clamp(72px,9vw,120px) 16px 0;overflow:hidden;position:relative;color:#fff}
 .tile.t1{background:radial-gradient(70% 55% at 12% 18%,rgba(3,140,101,.32),transparent 70%),linear-gradient(180deg,#021D1B 0%,#04303a 100%)}
@@ -80,24 +107,32 @@ h1,h2,h3{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","
 .rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(372px,82vw);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px max(16px,calc((100vw - 1240px)/2 + 4vw)) 28px;scroll-padding-inline:max(16px,calc((100vw - 1240px)/2 + 4vw));scrollbar-width:none}
 .rail::-webkit-scrollbar{display:none}
 .card{scroll-snap-align:start;background:var(--glass);color:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;text-align:left;padding:0;cursor:pointer;box-shadow:0 20px 44px rgba(0,0,0,.28);display:flex;flex-direction:column;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s,box-shadow .45s,opacity .9s cubic-bezier(.2,.7,.2,1),translate .9s cubic-bezier(.2,.7,.2,1)}
-.card:hover{text-decoration:none;transform:scale(1.02);border-color:var(--gline);box-shadow:0 26px 54px rgba(0,0,0,.36)}
+.card:hover{text-decoration:none}
+.card:active{transform:scale(.98)}
+@media(hover:hover) and (pointer:fine){.card:hover{transform:scale(1.02);border-color:var(--gline);box-shadow:0 26px 54px rgba(0,0,0,.36)}.card:hover .pic img{transform:scale(1.04)}.card:hover .more .ar{transform:translateX(3px)}}
 .card .pic{aspect-ratio:4/3;background:#fff;overflow:hidden}
-.card .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
-.card:hover .pic img{transform:scale(1.04)}
+.card .pic img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease-out),scale 1.4s var(--ease-in)}
+html.js .card.rv .pic img{scale:1.08}
+html.js .card.rv.in .pic img{scale:1}
 .card .pic.contain img{object-fit:contain;padding:10px}
 .card .body{padding:22px 26px 26px;display:flex;flex-direction:column;flex:1}
 .card .u{font-size:13px;color:var(--gold-l);opacity:.9;margin:0 0 6px}
 .card h3{font-size:24px;line-height:1.15;color:#fff}
 .card p.d{color:var(--mut);margin:8px 0 14px;font-size:16px;line-height:1.45}
 .card .more{margin-top:auto;font-size:17px;color:var(--gold);font-weight:500}
-.card .more::after{content:"\203A";margin-left:5px;font-size:1.15em}
+.card .more{display:inline-flex;align-items:center;gap:6px}
+.card .more .ar{transition:transform .25s var(--ease-out)}
 .ctl{max-width:1240px;margin:0 auto;padding:0 max(16px,4vw);display:flex;justify-content:flex-end;gap:14px}
-.ctl button,.x,.lb .top button,.lb .bot button{width:44px;height:44px;border-radius:50%;border:0;background:var(--goldgrad);color:#06201a;cursor:pointer;font-size:22px;line-height:1;display:grid;place-items:center;transition:filter .2s,transform .2s}
-.ctl button:hover,.x:hover,.lb .top button:hover,.lb .bot button:hover{filter:brightness(1.08);transform:scale(1.06)}
+.ctl button,.x,.lb .top button,.lb .bot button{width:44px;height:44px;border-radius:50%;border:0;background:var(--goldgrad);color:#06201a;cursor:pointer;font-size:22px;line-height:1;display:grid;place-items:center;transition:filter .2s ease,transform .16s var(--ease-out)}
+.ctl button:active,.x:active,.lb .top button:active,.lb .bot button:active{transform:scale(.94)}
+@media(hover:hover) and (pointer:fine){.ctl button:hover,.x:hover,.lb .top button:hover,.lb .bot button:hover{filter:brightness(1.08)}}
 .grid3{max-width:1240px;margin:0 auto;padding:8px max(16px,4vw) 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px}
 .quote{max-width:1240px;margin:0 auto 20px;padding:0 max(16px,4vw)}
 .quote blockquote{margin:0;background:radial-gradient(50% 60% at 100% 0%,rgba(226,182,91,.18),transparent 70%),linear-gradient(135deg,#0f5c45 0%,#02735E 42%,#034159 100%);color:#fff;border:1px solid rgba(226,182,91,.28);border-radius:28px;padding:clamp(40px,7vw,96px) clamp(24px,6vw,88px);overflow:hidden;position:relative}
 .quote blockquote p{margin:0;font-size:clamp(30px,5vw,64px);line-height:1.04;font-weight:600;letter-spacing:-.035em;text-wrap:balance;will-change:transform;position:relative}
+.qwords .qw{transition:opacity .6s var(--ease-in),color .6s var(--ease-in)}
+html.js .qwords .qw{opacity:.28}
+html.js .qwords .qw.on{opacity:1}
 .quote cite{display:block;font-style:normal;font-size:17px;font-weight:400;color:var(--gold-l);margin-top:24px;letter-spacing:-.01em}
 .quote .mark{position:absolute;right:-.06em;top:-.22em;font:700 clamp(220px,34vw,460px)/1 Georgia,serif;color:rgba(245,220,154,.16);pointer-events:none;will-change:transform}
 .about{background:linear-gradient(180deg,rgba(3,65,89,.40),rgba(3,140,101,.14));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:96px}
@@ -119,8 +154,16 @@ footer{max-width:1240px;margin:0 auto;padding:20px max(16px,4vw) 48px;font-size:
 footer p{margin:6px 0}
 .sheet,.share{position:fixed;inset:0;z-index:50;background:rgba(1,14,12,.66);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow-y:auto;overscroll-behavior:contain;padding:40px 16px}
 .sheet[hidden],.lb[hidden],.share[hidden]{display:none}
-.panel{position:relative;max-width:1040px;margin:0 auto;background:radial-gradient(60% 30% at 100% 0%,rgba(226,182,91,.10),transparent 70%),linear-gradient(180deg,#05352f 0%,#032522 60%,#021D1B 100%);border:1px solid var(--line);border-radius:28px;padding:clamp(48px,6vw,76px) clamp(20px,6vw,76px) clamp(36px,5vw,64px);animation:rise .55s cubic-bezier(.2,.8,.2,1)}
-@keyframes rise{from{opacity:0;transform:translateY(48px) scale(.98)}to{opacity:1;transform:none}}
+.panel{position:relative;max-width:1040px;margin:0 auto;background:radial-gradient(60% 30% at 100% 0%,rgba(226,182,91,.10),transparent 70%),linear-gradient(180deg,#05352f 0%,#032522 60%,#021D1B 100%);border:1px solid var(--line);border-radius:28px;padding:clamp(48px,6vw,76px) clamp(20px,6vw,76px) clamp(36px,5vw,64px);animation:rise .42s var(--ease-drawer)}
+@keyframes rise{from{opacity:0;transform:translateY(32px) scale(.985)}to{opacity:1;transform:none}}
+.sheet:not([hidden]),.share:not([hidden]){animation:fadeIn .3s ease both}
+@keyframes fadeOut{to{opacity:0}}
+@keyframes sink{to{opacity:0;transform:translateY(14px) scale(.985)}}
+.sheet.closing,.share.closing{animation:fadeOut .2s var(--ease-out) both}
+.sheet.closing .panel,.share.closing .box{animation:sink .2s var(--ease-out) both}
+.lb:not([hidden]){animation:fadeIn .22s ease both}
+.strip button{transition:box-shadow .2s ease,transform .16s var(--ease-out)}
+.strip button:active{transform:scale(.98)}
 .x{position:absolute;top:16px;right:16px;font-size:24px}
 .panel .meta{color:var(--gold-l);font-size:15px;margin:0 0 8px;padding-right:48px}
 .panel h2{font-size:clamp(34px,5.4vw,60px);line-height:1.04;max-width:20ch;letter-spacing:-.035em}
@@ -149,32 +192,39 @@ footer p{margin:6px 0}
 .lb .stage{display:grid;place-items:center;padding:0 12px;overflow:auto}
 .lb .stage img{max-height:100%;max-width:100%;object-fit:contain}
 .lb .bot{display:flex;justify-content:center;gap:16px;align-items:center}
-.share .box{position:relative;max-width:420px;margin:8vh auto 0;background:radial-gradient(60% 40% at 100% 0%,rgba(226,182,91,.14),transparent 70%),linear-gradient(180deg,#05352f,#021D1B);border:1px solid var(--line);border-radius:28px;padding:48px 32px 32px;text-align:center;animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+.share .box{position:relative;max-width:420px;margin:8vh auto 0;background:radial-gradient(60% 40% at 100% 0%,rgba(226,182,91,.14),transparent 70%),linear-gradient(180deg,#05352f,#021D1B);border:1px solid var(--line);border-radius:28px;padding:48px 32px 32px;text-align:center;animation:rise .42s var(--ease-drawer)}
 .share h2{font-size:28px;line-height:1.1}
 .share p{color:var(--mut);margin:8px 0 0;font-size:16px}
 .share .qr{width:min(260px,70vw);margin:24px auto 0;border-radius:16px;overflow:hidden;box-shadow:0 0 0 1px var(--gline)}
 .share input{width:100%;margin-top:20px;font:15px/1.3 inherit;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:#fff;text-align:center}
 .share .btn{margin-top:14px;width:100%}
-html.js .rv{opacity:0;translate:0 56px;transition:opacity 1s cubic-bezier(.2,.7,.2,1),translate 1s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0) * 90ms)}
-html.js .rv.in{opacity:1;translate:0 0}
+html.js .rv{opacity:0;translate:0 28px;transition:opacity .85s var(--ease-in),translate .85s var(--ease-in),scale .85s var(--ease-in);transition-delay:var(--d,0ms)}
+html.js .tile h2.rv{translate:0 44px}
+html.js .rv.fade{translate:none}
+html.js .head .rv{translate:0 20px}
+html.js .quote blockquote.rv{translate:none;scale:.97}
+html.js .rv.in,html.js .tile h2.rv.in,html.js .head .rv.in,html.js .quote blockquote.rv.in{opacity:1;translate:0 0;scale:1}
+@media(max-width:560px){.hero .links{flex-direction:column;align-items:stretch;max-width:320px;margin-inline:auto}}
+@media(prefers-reduced-transparency:reduce){.gn,.card,.sheet,.share{backdrop-filter:none;-webkit-backdrop-filter:none}.gn,.gn.scrolled{background:#021D1B}.card,.duo .tile{background:#062b29}}
 @media(max-width:833px){.cols,.about .in{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:734px){.duo{grid-template-columns:minmax(0,1fr);padding:12px;gap:12px}.duo .tile{border-radius:22px}.shot .frame{border-radius:16px}.sheet{padding:0}.panel{border-radius:0;min-height:100%;border:0}.gn .brand{font-size:14px}.gn .in{gap:14px}.gn nav{gap:16px}.hero-media{height:58svh}.ghost{top:68%}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}html.js .rv{opacity:1;translate:none}.hero-media{clip-path:none}.hero-media img{transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:opacity .2s ease!important;scroll-behavior:auto!important}html.js .rv,html.js .qwords .qw{opacity:1;translate:none;scale:none}html.js .card.rv .pic img{scale:none}.hero-media{clip-path:none}.hero-media img{transform:none}}
 </style>
 </head>
 <body>
-<header class="gn"><div class="in">
+<a class="skip" href="#studio">Skip to the work</a>
+<header class="gn" id="gn"><div class="in">
   <a class="brand" href="#top">Raihan Hussain</a>
-  <nav aria-label="Sections"><a href="#studio">Studio</a><a href="#technologies">Technologies</a><a href="#humanities">Humanities</a><a href="#early-work">Early work</a><a href="#about">About</a></nav>
+  <nav aria-label="Sections" id="gn-links"><a href="#studio" data-s="studio">Studio</a><a href="#technologies" data-s="technologies">Technologies</a><a href="#humanities" data-s="humanities">Humanities</a><a href="#early-work" data-s="early-work">Early work</a><a href="#about" data-s="about">About</a></nav>
   <button type="button" class="share-btn" id="share-open">Share</button>
 </div></header>
 
 <main id="top">
 <section class="hero" id="hero" aria-label="Introduction">
   <div class="hero-copy" id="hero-copy">
-    <h1>Raihan Hussain</h1>
+    <h1 aria-label="Raihan Hussain"><span class="w" aria-hidden="true"><span style="--d:80ms">Raihan</span></span> <span class="w" aria-hidden="true"><span style="--d:200ms">Hussain</span></span></h1>
     <p class="sub">Architecture student at the Manchester School of Architecture.</p>
-    <div class="links"><a class="btn" href="#studio">Explore the work</a><a class="btn line" href="#hull">Latest project</a></div>
+    <div class="links"><a class="btn" href="#studio">Explore the work<svg class="ar" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn line" href="#hull">Latest project</a></div>
   </div>
   <figure class="hero-media" id="hero-media"><img src="img/hero/cafe-window.jpg" srcset="img/hero/cafe-window-sm.jpg 1200w, img/hero/cafe-window.jpg 2400w" sizes="100vw" alt="Render looking through trees into the glazed café of Cafe Factory, with exposed brick, café tables inside and white chairs on the lawn" width="2400" height="1350"></figure>
   <p class="hero-cap">Cafe Factory, Studio 2.2. Rendered in Lumion.</p>
@@ -186,19 +236,19 @@ html.js .rv.in{opacity:1;translate:0 0}
 </div>
 
 <section id="technologies">
-  <div class="head scene"><h2><b data-px="0.035">Technologies.</b> <span class="rv">How buildings stand up, stay warm and are put together.</span></h2></div>
+  <div class="head scene"><h2><b data-px="0.035">Technologies.</b> <span class="rv" style="--d:120ms">How buildings stand up, stay warm and are put together.</span></h2></div>
   <div class="rail" id="rail-tech"></div>
   <div class="ctl" data-for="rail-tech"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div>
 </section>
 
 <section id="humanities">
-  <div class="head scene"><h2><b data-px="0.035">Humanities.</b> <span class="rv">Writing and drawing about the city.</span></h2></div>
-  <div class="quote scene"><blockquote class="rv"><span class="mark" aria-hidden="true" data-py="0.3">&ldquo;</span><p data-py="-0.05">&ldquo;We have built too much, too fast, for too long.&rdquo;</p><cite>From the manifesto Architecture Beyond Growth, Humanities 2.2</cite></blockquote></div>
+  <div class="head scene"><h2><b data-px="0.035">Humanities.</b> <span class="rv" style="--d:120ms">Writing and drawing about the city.</span></h2></div>
+  <div class="quote scene"><blockquote class="rv"><span class="mark" aria-hidden="true" data-py="0.3">&ldquo;</span><p data-py="-0.05" class="qwords" id="qwords" aria-label="We have built too much, too fast, for too long."><span aria-hidden="true"><span class="qw">“We</span> <span class="qw">have</span> <span class="qw">built</span> <span class="qw">too</span> <span class="qw">much,</span> <span class="qw">too</span> <span class="qw">fast,</span> <span class="qw">for</span> <span class="qw">too</span> <span class="qw">long.”</span></span></p><cite>From the manifesto Architecture Beyond Growth, Humanities 2.2</cite></blockquote></div>
   <div class="grid3" id="grid-hum"></div>
 </section>
 
 <section id="early-work">
-  <div class="head scene"><h2><b data-px="0.035">Early work.</b> <span class="rv">Where it started, 2024.</span></h2></div>
+  <div class="head scene"><h2><b data-px="0.035">Early work.</b> <span class="rv" style="--d:120ms">Where it started, 2024.</span></h2></div>
   <div class="rail" id="rail-early"></div>
   <div class="ctl" data-for="rail-early"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div>
 </section>
@@ -260,19 +310,19 @@ const tileHTML = (p, cls, ghost) => `
   <section class="tile scene ${cls}" aria-labelledby="t-${p.id}">
     ${ghost ? `<span class="ghost" aria-hidden="true" data-px="0.16" data-py="0.18">${esc(p.ghost || p.title)}</span>` : ''}
     <div class="copy" data-py="${ghost ? '-0.08' : '-0.04'}">
-      ${p.status ? `<p class="badge rv">${esc(p.status)}</p>` : ''}
-      <p class="meta rv">${esc(metaLine(p))}</p>
-      <h2 id="t-${p.id}" class="rv" style="--i:1">${esc(p.title)}</h2>
-      <p class="sub rv" style="--i:2">${esc(p.short)}</p>
-      <div class="links rv" style="--i:3"><a class="btn" href="#${p.id}">Learn more</a><a class="btn line" href="${drive(p.files[0][1])}" target="_blank" rel="noopener">View portfolio</a></div>
+      ${p.status ? `<p class="badge rv fade">${esc(p.status)}</p>` : ''}
+      <p class="meta rv fade" style="--d:40ms">${esc(metaLine(p))}</p>
+      <h2 id="t-${p.id}" class="rv" style="--d:90ms">${esc(p.title)}</h2>
+      <p class="sub rv" style="--d:210ms">${esc(p.short)}</p>
+      <div class="links rv" style="--d:300ms"><a class="btn" href="#${p.id}">Learn more<svg class="ar" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn line" href="${drive(p.files[0][1])}" target="_blank" rel="noopener">View portfolio<svg class="ar ext" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
     </div>
     <figure class="shot"><div class="frame" data-zoom><img src="img/${p.hero}.jpg" alt="${esc(p.alt)}" loading="lazy" decoding="async" style="object-position:${p.pos || 'center'}"></div></figure>
   </section>`;
 
 const cardHTML = (p, i) => `
-  <a class="card rv" href="#${p.id}" style="--i:${i % 4}">
+  <a class="card rv" href="#${p.id}" style="--d:${[0, 70, 120, 160][i % 4]}ms">
     <span class="pic${p.fit === 'contain' ? ' contain' : ''}"><img src="img/${p.hero}.jpg" alt="${esc(p.alt)}" loading="lazy" decoding="async" style="object-position:${p.pos || 'center'}"></span>
-    <span class="body"><span class="u">${esc(metaLine(p))}</span><h3>${esc(p.title)}</h3><p class="d">${esc(p.short)}</p><span class="more">Learn more</span></span>
+    <span class="body"><span class="u">${esc(metaLine(p))}</span><h3>${esc(p.title)}</h3><p class="d">${esc(p.short)}</p><span class="more">Learn more<svg class="ar" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
   </a>`;
 
 const themes = ['t1', 't2', 't3'];
@@ -303,7 +353,9 @@ else {
 }
 
 /* Scroll depth: hero opens up, big type drifts behind the images, images settle in */
-const hero = document.getElementById('hero'), heroCopy = document.getElementById('hero-copy'), heroMedia = document.getElementById('hero-media');
+const hero = document.getElementById('hero'), heroCopy = document.getElementById('hero-copy'), heroMedia = document.getElementById('hero-media'), heroImg = heroMedia.querySelector('img');
+const gn = document.getElementById('gn'), qWords = [...document.querySelectorAll('#qwords .qw')];
+let navScrolled = null;
 const scenes = [...document.querySelectorAll('.scene')].map(el => ({el, cur: null, layers: [...el.querySelectorAll('[data-px],[data-py]')], zoom: el.querySelector('[data-zoom]')}));
 let heroCur = null, raf = 0;
 const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
@@ -322,7 +374,13 @@ function frame() {
     const inset = Math.max(16, vw * 0.06) * (1 - ease(Math.min(1, h * 1.6)));
     heroMedia.style.setProperty('--hx', inset.toFixed(1) + 'px');
     heroMedia.style.setProperty('--hr', (28 * (1 - ease(Math.min(1, h * 1.6)))).toFixed(1) + 'px');
-    heroMedia.style.setProperty('--hs', (1.1 - 0.1 * ease(h)).toFixed(4));
+    heroImg.style.transform = `scale(${(1.1 - 0.1 * ease(h)).toFixed(4)})`;
+  }
+  const sc = scrollY > 24;
+  if (sc !== navScrolled) { navScrolled = sc; gn.classList.toggle('scrolled', sc); }
+  if (qWords.length) {
+    const line = vh * 0.68;
+    for (const w of qWords) { const on = w.getBoundingClientRect().top < line; if (on !== w.classList.contains('on')) w.classList.toggle('on', on); }
   }
   for (const s of scenes) {
     const r = s.el.getBoundingClientRect();
@@ -345,10 +403,24 @@ function frame() {
   if (moving) raf = requestAnimationFrame(frame);
 }
 const kick = () => { if (!raf) raf = requestAnimationFrame(frame); };
-if (!reduce) {
+if (reduce) {
+  qWords.forEach(w => w.classList.add('on'));
+  addEventListener('scroll', () => gn.classList.toggle('scrolled', scrollY > 24), {passive: true});
+} else {
   addEventListener('scroll', kick, {passive: true});
   addEventListener('resize', kick);
   kick();
+}
+
+/* Current section in the nav */
+const navLinks = [...document.querySelectorAll('#gn-links a')];
+if ('IntersectionObserver' in window) {
+  const navIo = new IntersectionObserver(es => {
+    for (const e of es) if (e.isIntersecting) navLinks.forEach(a => a.dataset.s === e.target.id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
+  }, {rootMargin: '-45% 0px -50% 0px'});
+  navLinks.forEach(a => { const t = document.getElementById(a.dataset.s); if (t) navIo.observe(t); });
+  const heroIo = new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting) navLinks.forEach(a => a.removeAttribute('aria-current')); }, {rootMargin: '-45% 0px -50% 0px'});
+  heroIo.observe(hero);
 }
 
 /* Project sheet, gallery and viewer */
@@ -378,15 +450,19 @@ function openProject(p) {
     <h3>From the portfolio</h3>
     <div class="strip" id="strip">${gallery.map((g, i) => `<button type="button" data-i="${i}" aria-label="Enlarge ${esc(g.c)}"><img src="${g.t}" alt="${esc(p.title)}, ${esc(g.c)}" loading="lazy" decoding="async"></button>`).join('')}</div>
     <div class="strip-ctl"><p>${gallery.length} images. Select one to enlarge.</p><div class="ctl"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div></div>`;
+  clearTimeout(closingTimer); sheet.classList.remove('closing');
   if (sheet.hidden) { lastFocus = document.activeElement; savedY = window.scrollY; }
   sheet.hidden = false; sheet.scrollTop = 0;
   document.documentElement.style.overflow = 'hidden';
   document.getElementById('m-x').focus({preventScroll: true});
 }
+let closingTimer = 0;
 function closeProject(fromHash) {
-  if (sheet.hidden) return;
+  if (sheet.hidden || sheet.classList.contains('closing')) return;
   closeLb();
-  sheet.hidden = true; current = null;
+  current = null;
+  const finish = () => { sheet.hidden = true; sheet.classList.remove('closing'); };
+  if (reduce) finish(); else { sheet.classList.add('closing'); clearTimeout(closingTimer); closingTimer = setTimeout(finish, 200); }
   document.documentElement.style.overflow = '';
   const html = document.documentElement, prev = html.style.scrollBehavior;
   html.style.scrollBehavior = 'auto';
@@ -416,7 +492,7 @@ lb.addEventListener('click', e => { if (e.target.classList.contains('stage')) cl
 const share = document.getElementById('share'), shareUrl = document.getElementById('share-url'), shareCopy = document.getElementById('share-copy');
 let shareFocus = null;
 function openShare() { shareFocus = document.activeElement; share.hidden = false; document.documentElement.style.overflow = 'hidden'; document.getElementById('share-x').focus({preventScroll: true}); }
-function closeShare() { if (share.hidden) return; share.hidden = true; if (sheet.hidden) document.documentElement.style.overflow = ''; shareCopy.textContent = 'Copy link'; if (shareFocus && shareFocus.focus) shareFocus.focus({preventScroll: true}); }
+function closeShare() { if (share.hidden || share.classList.contains('closing')) return; const fin = () => { share.hidden = true; share.classList.remove('closing'); }; if (reduce) fin(); else { share.classList.add('closing'); setTimeout(fin, 200); } if (sheet.hidden) document.documentElement.style.overflow = ''; shareCopy.textContent = 'Copy link'; if (shareFocus && shareFocus.focus) shareFocus.focus({preventScroll: true}); }
 document.getElementById('share-open').addEventListener('click', openShare);
 document.getElementById('share-x').addEventListener('click', closeShare);
 share.addEventListener('click', e => { if (e.target === share) closeShare(); });
@@ -440,6 +516,7 @@ function route() {
 }
 window.addEventListener('hashchange', route);
 route();
+window.__rvok = true;
 }
 </script>
 </body>
