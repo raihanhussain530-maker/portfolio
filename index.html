@@ -32,7 +32,7 @@ html{scroll-padding-top:60px;-webkit-text-size-adjust:100%;background:var(--base
 body{margin:0;background:var(--base);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;letter-spacing:-.01em;overflow-x:clip;-webkit-font-smoothing:antialiased;position:relative}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(55% 45% at 8% 4%,rgba(3,140,101,.38),transparent 70%),radial-gradient(50% 50% at 100% 35%,rgba(3,65,89,.62),transparent 72%),radial-gradient(40% 35% at 70% 100%,rgba(226,182,91,.10),transparent 72%),var(--base)}
 body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-.hero::after,.tile.t1::after,.tile.t2::after,.tile.t3::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero::after,.tile.t1::after,.tile.t2::after,.tile.t3::after,.tile.tc::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 img{max-width:100%;height:auto;display:block}
 ::selection{background:rgba(226,182,91,.38);color:#fff}
 .skip{position:absolute;left:16px;top:-80px;z-index:100;background:var(--goldgrad);color:#06201a;font-weight:600;padding:10px 18px;border-radius:980px;transition:top .2s var(--ease-out)}
@@ -126,6 +126,24 @@ html.js .card.rv.in .pic img{scale:1}
 .ctl button,.x,.lb .top button,.lb .bot button{width:44px;height:44px;border-radius:50%;border:0;background:var(--goldgrad);color:#06201a;cursor:pointer;font-size:22px;line-height:1;display:grid;place-items:center;transition:filter .2s ease,transform .16s var(--ease-out)}
 .ctl button:active,.x:active,.lb .top button:active,.lb .bot button:active{transform:scale(.94)}
 @media(hover:hover) and (pointer:fine){.ctl button:hover,.x:hover,.lb .top button:hover,.lb .bot button:hover{filter:brightness(1.08)}}
+.tile.tc{background:radial-gradient(60% 45% at 50% 0%,rgba(226,182,91,.20),transparent 70%),radial-gradient(55% 45% at 0% 100%,rgba(3,140,101,.20),transparent 70%),linear-gradient(180deg,#021D1B 0%,#063731 48%,#034159 100%)}
+.tile.tc::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;background:repeating-conic-gradient(from 0deg at 50% -6%,rgba(245,220,154,.95) 0deg .9deg,transparent .9deg 7.5deg);-webkit-mask:radial-gradient(75% 60% at 50% 0%,#000,transparent 78%);mask:radial-gradient(75% 60% at 50% 0%,#000,transparent 78%)}
+.journey{max-width:1240px;margin:0 auto;padding:4px max(16px,4vw) clamp(56px,7vw,96px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;list-style:none}
+.journey li{position:relative;padding:30px 30px 32px;border-radius:24px;background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);overflow:hidden}
+.journey li::before{content:"";position:absolute;left:30px;right:30px;top:0;height:2px;border-radius:2px;background:var(--goldgrad);transform:scaleX(0);transform-origin:left;transition:transform 1.2s var(--ease-out) calc(var(--d,0ms) + 250ms)}
+html:not(.js) .journey li::before,html.js .journey li.in::before{transform:scaleX(1)}
+.journey .yr{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--gold-l)}
+.journey h3{font-size:clamp(22px,2.4vw,28px);line-height:1.15;margin:8px 0 8px;color:#fff}
+.journey p{margin:0;color:var(--mut);font-size:16px;line-height:1.5;max-width:42ch}
+.rail-label{max-width:1240px;margin:0 auto;padding:clamp(64px,8vw,104px) max(16px,4vw) 18px;font-size:clamp(22px,2.6vw,32px);font-weight:600;letter-spacing:-.02em;line-height:1.15;color:#fff}
+.rail-label span{color:var(--mut);font-weight:500}
+.card .pic.type{position:relative;background:radial-gradient(70% 60% at 88% 8%,rgba(226,182,91,.24),transparent 70%),linear-gradient(150deg,#038C65 0%,#0f5c45 45%,#034159 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:22px 26px;transition:filter .45s var(--ease-out)}
+.card .pic.type small,.lead-type small{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-l);margin-bottom:8px}
+.card .pic.type b,.lead-type b{display:block;font:700 clamp(32px,3.4vw,42px)/1.02 -apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",sans-serif;letter-spacing:-.045em;color:transparent;background:var(--textgrad);-webkit-background-clip:text;background-clip:text;padding-bottom:.04em}
+@media(hover:hover) and (pointer:fine){.card:hover .pic.type{filter:brightness(1.08)}}
+.panel .lead-type{margin:32px 0 0;border-radius:18px;padding:clamp(28px,5vw,48px);display:flex;flex-direction:column;background:radial-gradient(60% 70% at 92% 6%,rgba(226,182,91,.22),transparent 70%),linear-gradient(150deg,#038C65 0%,#0f5c45 45%,#034159 100%);box-shadow:0 0 0 1px var(--gline)}
+.panel .lead-type b{font-size:clamp(40px,7vw,72px)}
+@media(max-width:734px){.journey{grid-template-columns:minmax(0,1fr);gap:12px}.journey li{padding:24px 22px 26px}.journey li::before{left:22px;right:22px}}
 .grid3{max-width:1240px;margin:0 auto;padding:8px max(16px,4vw) 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:20px}
 .quote{max-width:1240px;margin:0 auto 20px;padding:0 max(16px,4vw)}
 .quote blockquote{margin:0;background:radial-gradient(50% 60% at 100% 0%,rgba(226,182,91,.18),transparent 70%),linear-gradient(135deg,#0f5c45 0%,#02735E 42%,#034159 100%);color:#fff;border:1px solid rgba(226,182,91,.28);border-radius:28px;padding:clamp(40px,7vw,96px) clamp(24px,6vw,88px);overflow:hidden;position:relative}
@@ -215,7 +233,7 @@ html.js .rv.in,html.js .tile h2.rv.in,html.js .head .rv.in,html.js .quote blockq
 <a class="skip" href="#studio">Skip to the work</a>
 <header class="gn" id="gn"><div class="in">
   <a class="brand" href="#top">Raihan Hussain</a>
-  <nav aria-label="Sections" id="gn-links"><a href="#studio" data-s="studio">Studio</a><a href="#technologies" data-s="technologies">Technologies</a><a href="#humanities" data-s="humanities">Humanities</a><a href="#early-work" data-s="early-work">Early work</a><a href="#about" data-s="about">About</a></nav>
+  <nav aria-label="Sections" id="gn-links"><a href="#studio" data-s="studio">Studio</a><a href="#technologies" data-s="technologies">Technologies</a><a href="#humanities" data-s="humanities">Humanities</a><a href="#early-work" data-s="early-work">Early work</a><a href="#college" data-s="college">College</a><a href="#about" data-s="about">About</a></nav>
   <button type="button" class="share-btn" id="share-open">Share</button>
 </div></header>
 
@@ -253,6 +271,19 @@ html.js .rv.in,html.js .tile h2.rv.in,html.js .head .rv.in,html.js .quote blockq
   <div class="ctl" data-for="rail-early"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div>
 </section>
 
+<section id="college">
+  <div class="head scene"><h2><b data-px="0.035">Loreto College.</b> <span class="rv" style="--d:120ms">A-level 3D Design, 2021 to 2023. Where I first learnt to model buildings.</span></h2></div>
+  <ol class="journey" aria-label="Two years at Loreto College">
+    <li class="rv"><span class="yr">Year 1 · 2021–22</span><h3>Learning the tools</h3><p>Paper folding, clay and porcelain, then my first drawings in AutoCAD and my first models on the laser cutter.</p></li>
+    <li class="rv" style="--d:120ms"><span class="yr">Year 2 · 2022–23</span><h3>A personal investigation</h3><p>Two architects, a lot of windows and an apartment block, ending with my Art Deco exam piece.</p></li>
+  </ol>
+  <div id="college-feature"></div>
+  <div class="duo" id="college-duo"></div>
+  <p class="rail-label rv">Along the way. <span>Experiments, research and writing.</span></p>
+  <div class="rail" id="rail-college"></div>
+  <div class="ctl" data-for="rail-college"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div>
+</section>
+
 <section class="about" id="about"><div class="in">
   <div>
     <h2>About.</h2>
@@ -260,7 +291,7 @@ html.js .rv.in,html.js .tile h2.rv.in,html.js .head .rv.in,html.js .quote blockq
     <p>I work across hand sketching, physical models, collage and digital modelling, and I&rsquo;m interested in adaptive reuse, environmental design and architecture that gives something back to the people who live around it.</p>
   </div>
   <dl>
-    <div><dt><h3>Study</h3></dt><dd>BA Architecture, Manchester School of Architecture. Year 3, 2026&ndash;27.</dd></div>
+    <div><dt><h3>Study</h3></dt><dd>BA Architecture, Manchester School of Architecture. Year 3, 2026&ndash;27.<br>Before that, A-level 3D Design at Loreto College, 2021&ndash;23.</dd></div>
     <div><dt><h3>Toolkit</h3></dt><dd><div class="chips"><span>Revit</span><span>AutoCAD</span><span>Rhino</span><span>Lumion</span><span>InDesign</span><span>Photoshop</span><span>Model making</span><span>Hand drawing</span></div></dd></div>
     <div><dt><h3>Full portfolios</h3></dt><dd>Every project links to its complete PDF on Google Drive.</dd></div>
   </dl>
@@ -270,8 +301,8 @@ html.js .rv.in,html.js .tile h2.rv.in,html.js .head .rv.in,html.js .quote blockq
 </main>
 
 <footer>
-  <p>Copyright &copy; 2026 Raihan Hussain. All work shown is university coursework; group projects are marked as such.</p>
-  <p>Images are pages and extracts from the original portfolio PDFs.</p>
+  <p>Copyright &copy; 2026 Raihan Hussain. All work shown is university and college coursework; group projects are marked as such.</p>
+  <p>Images are pages and extracts from the original portfolio PDFs, plus photos of my college models.</p>
 </footer>
 
 <div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="m-title">
@@ -302,7 +333,8 @@ const P = window.PROJECTS || [];
 const byId = Object.fromEntries(P.map(p => [p.id, p]));
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const drive = id => 'https://drive.google.com/file/d/' + id + '/view';
-const pg = n => n.startsWith('hero/') ? {t:'img/'+n+'.jpg', f:'img/'+n+'.jpg', c: n.startsWith('hero/cafe-') ? 'Render' : 'Extract'} : {t:'img/thumb/'+n+'.jpg', f:'img/full/'+n+'.jpg', c:'Page '+parseInt(n.slice(-2),10)};
+const collegeCap = n => /^(ss\d|hc3768|hc4008|p08-03)$/.test(n) ? 'AutoCAD drawing' : /^(ph\d|p07-)/.test(n) ? 'Primary research photo' : 'Photo';
+const pg = n => n.startsWith('college/') ? {t:'img/college/thumb/'+n.slice(8)+'.jpg', f:'img/college/full/'+n.slice(8)+'.jpg', c: collegeCap(n.slice(8))} : n.startsWith('hero/') ? {t:'img/'+n+'.jpg', f:'img/'+n+'.jpg', c: n.startsWith('hero/cafe-') ? 'Render' : 'Extract'} : {t:'img/thumb/'+n+'.jpg', f:'img/full/'+n+'.jpg', c:'Page '+parseInt(n.slice(-2),10)};
 const metaLine = p => [p.unit, p.year].filter(Boolean).join(' · ');
 const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -321,7 +353,7 @@ const tileHTML = (p, cls, ghost) => `
 
 const cardHTML = (p, i) => `
   <a class="card rv" href="#${p.id}" style="--d:${[0, 70, 120, 160][i % 4]}ms">
-    <span class="pic${p.fit === 'contain' ? ' contain' : ''}"><img src="img/${p.hero}.jpg" alt="${esc(p.alt)}" loading="lazy" decoding="async" style="object-position:${p.pos || 'center'}"></span>
+    ${p.hero ? `<span class="pic${p.fit === 'contain' ? ' contain' : ''}"><img src="img/${p.hero}.jpg" alt="${esc(p.alt)}" loading="lazy" decoding="async" style="object-position:${p.pos || 'center'}"></span>` : `<span class="pic type" aria-hidden="true"><small>${esc((p.cover || [p.type])[0])}</small>${(p.cover || []).slice(1).map(c => `<b>${esc(c)}</b>`).join('')}</span>`}
     <span class="body"><span class="u">${esc(metaLine(p))}</span><h3>${esc(p.title)}</h3><p class="d">${esc(p.short)}</p><span class="more">Learn more<svg class="ar" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
   </a>`;
 
@@ -331,8 +363,11 @@ document.getElementById('duo').innerHTML = P.filter(p => p.group === 'duo').map(
 document.getElementById('rail-tech').innerHTML = P.filter(p => p.group === 'tech').map(cardHTML).join('');
 document.getElementById('grid-hum').innerHTML = P.filter(p => p.group === 'hum').map(cardHTML).join('');
 document.getElementById('rail-early').innerHTML = P.filter(p => p.group === 'early').map(cardHTML).join('');
+document.getElementById('college-feature').innerHTML = P.filter(p => p.group === 'college-feature').map(p => tileHTML(p, 'feat tc', true)).join('');
+document.getElementById('college-duo').innerHTML = P.filter(p => p.group === 'college-duo').map(p => tileHTML(p, 'glassy', false)).join('');
+document.getElementById('rail-college').innerHTML = P.filter(p => p.group === 'college').map(cardHTML).join('');
 
-const groups = [['Studio', ['feature', 'duo']], ['Technologies', ['tech']], ['Humanities', ['hum']], ['Early work', ['early']]];
+const groups = [['Studio', ['feature', 'duo']], ['Technologies', ['tech']], ['Humanities', ['hum']], ['Early work', ['early']], ['Loreto College', ['college-feature', 'college-duo', 'college']]];
 document.getElementById('index').innerHTML = groups.map(([g, ks]) => `<div><h3>${g}</h3><ul>${P.filter(p => ks.includes(p.group)).map(p => `<li><a href="#${p.id}">${esc(p.title)}</a><small>${esc(p.year)}</small></li>`).join('')}</ul></div>`).join('');
 
 for (const c of document.querySelectorAll('.ctl[data-for]')) {
@@ -416,7 +451,7 @@ if (reduce) {
 const navLinks = [...document.querySelectorAll('#gn-links a')];
 if ('IntersectionObserver' in window) {
   const navIo = new IntersectionObserver(es => {
-    for (const e of es) if (e.isIntersecting) navLinks.forEach(a => a.dataset.s === e.target.id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
+    for (const e of es) if (e.isIntersecting) navLinks.forEach(a => { if (a.dataset.s !== e.target.id) { a.removeAttribute('aria-current'); return; } a.setAttribute('aria-current', 'true'); const n = a.parentElement; if (n.scrollWidth > n.clientWidth + 2) n.scrollTo({left: a.offsetLeft - n.offsetLeft - (n.clientWidth - a.offsetWidth) / 2, behavior: reduce ? 'auto' : 'smooth'}); });
   }, {rootMargin: '-45% 0px -50% 0px'});
   navLinks.forEach(a => { const t = document.getElementById(a.dataset.s); if (t) navIo.observe(t); });
   const heroIo = new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting) navLinks.forEach(a => a.removeAttribute('aria-current')); }, {rootMargin: '-45% 0px -50% 0px'});
@@ -438,7 +473,7 @@ function openProject(p) {
     <p class="meta">${esc(metaLine(p))}</p>
     <h2 id="m-title">${esc(p.title)}</h2>
     <p class="tag">${esc(p.tagline || p.short)}</p>
-    <img class="lead" src="img/${p.hero}.jpg" alt="${esc(p.alt)}">
+    ${p.hero ? `<img class="lead" src="img/${p.hero}.jpg" alt="${esc(p.alt)}">` : p.cover ? `<div class="lead-type" aria-hidden="true"><small>${esc(p.cover[0])}</small>${p.cover.slice(1).map(c => `<b>${esc(c)}</b>`).join('')}</div>` : ''}
     <div class="cols">
       <div>${p.text.map(t => `<p>${esc(t)}</p>`).join('')}</div>
       <div class="facts">
@@ -447,9 +482,9 @@ function openProject(p) {
         <div><b>Full portfolio</b><span class="files">${p.files.map(([l, id]) => `<a href="${drive(id)}" target="_blank" rel="noopener">${esc(l)}</a>`).join('')}</span></div>
       </div>
     </div>
-    <h3>From the portfolio</h3>
-    <div class="strip" id="strip">${gallery.map((g, i) => `<button type="button" data-i="${i}" aria-label="Enlarge ${esc(g.c)}"><img src="${g.t}" alt="${esc(p.title)}, ${esc(g.c)}" loading="lazy" decoding="async"></button>`).join('')}</div>
-    <div class="strip-ctl"><p>${gallery.length} images. Select one to enlarge.</p><div class="ctl"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div></div>`;
+    ${gallery.length ? `<h3>From the portfolio</h3>
+    <div class="strip" id="strip">${gallery.map((g, i) => `<button type="button" data-i="${i}" aria-label="Enlarge image ${i + 1}, ${esc(g.c)}"><img src="${g.t}" alt="${esc(p.title)}, ${esc(g.c)}" loading="lazy" decoding="async"></button>`).join('')}</div>
+    <div class="strip-ctl"><p>${gallery.length} images. Select one to enlarge.</p><div class="ctl"><button type="button" data-d="-1" aria-label="Previous">&#8249;</button><button type="button" data-d="1" aria-label="Next">&#8250;</button></div></div>` : ''}`;
   clearTimeout(closingTimer); sheet.classList.remove('closing');
   if (sheet.hidden) { lastFocus = document.activeElement; savedY = window.scrollY; }
   sheet.hidden = false; sheet.scrollTop = 0;

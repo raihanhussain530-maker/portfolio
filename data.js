@@ -328,5 +328,143 @@ window.PROJECTS = [
   ],
   pages: ['ppd-02', 'ppd-03', 'ppd-04', 'ppd-05', 'ppd-06', 'ppd-07', 'ppd-outside-01', 'ppd-outside-02', 'ppd-outside-03'],
   files: [['Inside report and journal (PDF)', '1N_7vyV4oTJ9OwyycdmETNoBApju6YDSB'], ['Outside journal (PDF)', '1Ij7dpQ8Ecph8Ew2XGkx6ZabCB5WfjQRr']]
+
+},
+{
+  id: 'art-deco-mansion', group: 'college-feature', ghost: 'Art Deco',
+  title: '1920s Art Deco Mansion',
+  unit: 'A-level 3D Design, exam final piece', year: 'Year 2 · 2023', place: 'Loreto College, Manchester', type: 'Laser-cut card model',
+  short: 'My final exam piece: a symmetrical 1920s mansion, laser cut and built by hand.',
+  tagline: 'Four Art Deco references, a bit of The Great Gatsby and a lot of laser-cut card.',
+  hero: 'college/full/p08-06', pos: 'center 45%', alt: 'Laser-cut card model of a symmetrical Art Deco mansion with dark pillars, a triangular pediment and arched windows',
+  text: [
+    "This was my final exam piece for A-level 3D Design. I chose a 1920s Art Deco mansion because the style has such clear rules: symmetrical proportions, tall windows and grand pillars at the front that become the focal point of the whole building.",
+    "I also borrowed ideas from The Great Gatsby, which is set in the 1920s and full of Art Deco mansions. I picked four reference buildings and combined their strongest features into one design, testing the layout, colours and textures before drawing everything up in AutoCAD for the laser cutter.",
+    "The finished model brings those references together: a row of dark pillars under a triangular centrepiece, large arched windows on both wings and balustrades along the front to give it a grander presence."
+  ],
+  points: [
+    "Drawn in AutoCAD, laser cut from card and assembled by hand",
+    "The pillars and triangular centrepiece act as the focal point",
+    "Arched windows and front balustrades repeated symmetrically on both wings"
+  ],
+  pages: ['college/p08-06', 'college/p08-07', 'college/p08-05', 'college/p08-08', 'college/p08-03', 'college/ss1', 'college/ss2', 'college/ss3', 'college/ss4', 'college/ss5'],
+  files: [['Final piece (PDF)', '1PZy4FmwxeeKcl2KuQf-pAstMErEJBkKJ']]
+},
+{
+  id: 'apartment-block', group: 'college-duo',
+  title: 'Apartment Block',
+  unit: 'A-level 3D Design, final outcome', year: 'Year 2 · 2023', place: 'Loreto College, Manchester', type: 'Laser-cut card model',
+  short: 'Where my window experiments ended up: 216 windows, glued on by hand.',
+  tagline: 'The final outcome of my personal investigation into windows.',
+  hero: 'college/full/rt7151', pos: 'center 40%', alt: 'Tall card model of an apartment block with rows of black windows, grey cladding at the top and laser-cut balconies',
+  text: [
+    "This was the final outcome of my personal investigation. After months of experimenting with window designs, I wanted to bring them together in one building that could read as either an apartment block or a hotel.",
+    "I started by drawing the façade in AutoCAD, with black windows and dark cladding near the top to give the building more depth. Once everything was laser cut, I glued all 216 windows on by hand, then added grey cladding, balconies and a brick-pattern layer to fill in the blank spaces.",
+    "To finish it, I added a grassy roof garden, a logo on a black background, straw pillars to stop the overhang sagging and a small soil pit by the door. The trees and grass are in autumn colours to give the whole model a warmer tone."
+  ],
+  points: [
+    "216 black windows glued on by hand",
+    "Grey cladding, balconies and a brick-pattern layer for depth",
+    "A roof garden and autumn-toned landscaping"
+  ],
+  pages: ['college/rt7151', 'college/rt7152', 'college/rt6929', 'college/sp6833', 'college/sp6814', 'college/sp6836', 'college/p05-00', 'college/rt7394'],
+  files: [['Final outcome (PDF)', '1yQuPUNXeYMGnUvUtPuWqvrC754rLR-mA']]
+},
+{
+  id: 'napier-kahn', group: 'college-duo',
+  title: 'Napier Clarke and Louis Kahn',
+  unit: 'A-level 3D Design, artist research', year: 'Year 1 to 2 · 2022', place: 'Loreto College, Manchester', type: 'Laser-cut models and presentation board',
+  short: 'Studying two architects through models, and learning AutoCAD along the way.',
+  tagline: 'The first stage of my personal investigation.',
+  hero: 'college/full/sp5920', pos: 'center 22%', alt: 'Card models on a cutting mat: a tall triangular gable with timber-effect strips and a brick-patterned block',
+  text: [
+    "This was the first stage of my personal investigation. My first artist was Napier Clarke Architects, a practice in Buckinghamshire. I picked out the parts of their buildings that stood out most and modelled them one section at a time.",
+    "My AutoCAD skills were limited at first, but the more I designed and laser cut, the easier it became. For their Samarkand project, which has grey timber cladding, I laser cut thin strips of card and stuck them on by hand to get a realistic wood effect. The brick section of their Pennycroft house was my first go at drawing brickwork in AutoCAD, and my final model for this artist was Pennycroft’s triangular, fully glazed gable, built up in layers. I then mounted all of the models on one board.",
+    "My second artist was Louis Kahn. I admire how he uses simple geometric shapes and natural light to make buildings feel monumental. I made models based on two of his best-known works: the Bangladesh Parliament Building in Dhaka, with its huge circular openings, and the Fisher House in Pennsylvania."
+  ],
+  points: [
+    "Card strips laid by hand to imitate Samarkand’s grey timber cladding",
+    "My first brickwork drawn in AutoCAD, for the Pennycroft house",
+    "Kahn studies of the Bangladesh Parliament Building and the Fisher House"
+  ],
+  pages: ['college/sp5920', 'college/sp5755', 'college/sp5834', 'college/sp5918', 'college/sp6605', 'college/hc3768', 'college/hc4008', 'college/p02-19', 'college/p02-21', 'college/p02-23', 'college/p02-24'],
+  files: [['Artist research (PDF)', '13fcVvaiQgSJArSsLfPXUqk7KwvdYHYrB']]
+},
+{
+  id: 'intro-3d', group: 'college',
+  title: 'Introduction to 3D Design',
+  unit: 'A-level 3D Design, introduction', year: 'Year 1 · 2021–22', place: 'Loreto College, Manchester', type: 'Paper, clay, porcelain and laser cutting',
+  short: 'Paper folding, clay, porcelain and my very first laser-cut model.',
+  tagline: 'A first year of trying every material I could.',
+  hero: 'college/thumb/hc2837', pos: 'center 40%', alt: 'Two spiralling kirigami forms cut from white paper, lit from the side',
+  text: [
+    "My first year was all about trying different materials and methods. We started with origami, the Japanese art of folding paper, and kirigami, which adds cutting to the folding so you can make more complex shapes and patterns. I practised techniques like pleating, creasing, sinking and crimping.",
+    "From there I developed my own pieces. I layered cut paper over a light box to create a soft, diffused city scene, inspired by Hari & Deepti, and made miniature houseplants entirely out of paper, inspired by Emi Hazlett, which I photographed under different coloured lights.",
+    "I also worked with clay, building an abandoned corner of a house and copying one of my designs onto a ceramic block, and experimented with porcelain. Finally, I was introduced to AutoCAD and the laser cutter, and used them to make a layered card tape measure. These were the skills I took into my personal investigation in Year 2."
+  ],
+  points: [
+    "Origami and kirigami studies in white paper",
+    "Light-box paper layers after Hari & Deepti, and paper houseplants after Emi Hazlett",
+    "A layered tape measure, my first AutoCAD and laser-cut model"
+  ],
+  pages: ['college/hc2837', 'college/hc2876', 'college/hc2880', 'college/hc2914', 'college/hc2916', 'college/p01-28', 'college/p01-29', 'college/hc3539', 'college/hc3538', 'college/hc3240', 'college/p01-32', 'college/p01-35'],
+  files: [['Introduction (PDF)', '1Vx2yKy19e0UI4JxHOVwVnyPM25Zs2euu']]
+},
+{
+  id: 'window-experiments', group: 'college',
+  title: 'Window Experiments',
+  unit: 'A-level 3D Design, experimentation', year: 'Year 2 · 2022', place: 'Loreto College, Manchester', type: 'Laser-cut studies',
+  short: 'Testing glazing grids and lattice patterns on the laser cutter.',
+  hero: 'college/thumb/sp6542', pos: 'center', alt: 'Laser-cut card window frame with a glazing grid and lattice panels at each end',
+  text: [
+    "The next phase of my personal investigation focused on windows, especially modern ones like large glass façades. I took my own photos of windows on real buildings, collected secondary images, and used both to design different frames and patterns.",
+    "I drew each design in AutoCAD and laser cut it, from simple glazing grids to more intricate lattice screens. Seeing them as physical pieces showed me which ones worked at model scale, and the best ideas went straight into the façade of my apartment block."
+  ],
+  points: [
+    "Primary photos of real windows alongside secondary research",
+    "Glazing grids and lattice screens laser cut from card",
+    "Façade studies that led into the apartment block"
+  ],
+  pages: ['college/sp6542', 'college/sp6543', 'college/sp6476', 'college/sp6477', 'college/sp6540', 'college/sp6541', 'college/sp6604', 'college/ph01', 'college/ph05', 'college/ph10', 'college/ph13'],
+  files: [['Experimentation and development (PDF)', '1b973czKyUl8M560IAdvivb3YfXt3wZ0p']]
+},
+{
+  id: 'barn-houses', group: 'college',
+  title: 'Modern Barn Houses',
+  unit: 'A-level 3D Design, related study', year: 'Year 2 · 2023', type: 'Written study',
+  short: 'A written study of three modern barn houses and what makes them work.',
+  cover: ['Written study', 'Fiore', 'Dogtrot', 'Hudson'],
+  alt: '',
+  text: [
+    "Modern barn houses take the simple silhouette of agricultural buildings and add modern elements like large windows, steep roofs and minimal detailing. For my related study, I compared three examples and looked at how each one uses materials and light to sit naturally in its landscape.",
+    "Fiore by Salmela Architects, in Door County, Wisconsin, takes its name from the Italian word for flower, because it seems to rise out of the surrounding field. Steep roofs and weathered timber link it back to 19th-century farmhouses, while large windows fill the small interior with light. The Dogtrot Residence by CLB Architects, in Jackson, Wyoming, is based on traditional dogtrot barns: two cabins joined by a covered breezeway. Its low profile sits comfortably on the flat grassland, and Corten steel imitates weathered wood while standing up better to the climate.",
+    "The Hudson Fieldhouse by Mowery Marsh Architects sits on a hilltop in upstate New York. A natural stone base levels the house on the slope, black cladding works with the shadows of the woods and a bridge leads up to a large entrance door. Across all three, the pattern is clear: a main triangular form connected to smaller parts, natural materials, and bigger windows for light and views."
+  ],
+  points: [
+    "Fiore, Salmela Architects: Door County, Wisconsin",
+    "Dogtrot Residence, CLB Architects: Jackson, Wyoming",
+    "Hudson Fieldhouse, Mowery Marsh Architects: upstate New York"
+  ],
+  pages: [],
+  files: [['Related study (PDF)', '1wate9izX8doQyLDd8PoWYFb5BT6Bu-XY']]
+},
+{
+  id: 'exam-research', group: 'college',
+  title: 'Wright, Le Corbusier and Art Deco',
+  unit: 'A-level 3D Design, exam research', year: 'Year 2 · 2023', place: 'Loreto College, Manchester', type: 'Models and primary research',
+  short: 'The research and models that led to my Art Deco exam piece.',
+  hero: 'college/thumb/p06-04', pos: 'center', alt: 'Card model of a patterned Frank Lloyd Wright-style façade with dark glazing between textured piers',
+  text: [
+    "Before the exam, I researched two of the most important architects of the 20th century. Frank Lloyd Wright is known for his complex patterns and symmetry, so I made models of his 1920s buildings with clear acrylic at the back to create reflections and add depth. On the Storer House model, I added small details from the real building for extra texture against the glass.",
+    "Le Corbusier’s Villa Savoye, completed in 1931, is a key example of the International Style. I modelled its smooth white surfaces, slim columns and horizontal ribbon windows to understand how simple geometry can create a sense of clarity.",
+    "I then focused on 1920s Art Deco. For primary research I photographed the Sunlight House in Manchester, and for secondary research I looked at the Marine Air Terminal in New York, the architecture of The Great Gatsby, and Art Deco window and door designs. All of this fed into my final exam piece."
+  ],
+  points: [
+    "Frank Lloyd Wright models with reflective acrylic backs",
+    "A Villa Savoye study in white card",
+    "Primary photos of the Sunlight House, Manchester"
+  ],
+  pages: ['college/p06-04', 'college/p06-06', 'college/p06-07', 'college/p06-12', 'college/p06-13', 'college/p07-00', 'college/p07-01'],
+  files: [['Artist research, exam (PDF)', '13SnVSvq-xC9Q6GB1sNB9ijobZCpkXvi1'], ['Experimentation and development, exam (PDF)', '1xlMM6HjiPG-R0AmT7MUJvm1tyngQmo_V']]
 }
 ];
