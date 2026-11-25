@@ -293,7 +293,7 @@ html.js .rv.in,html.js .tile h2.rv.in,html.js .head .rv.in,html.js .quote blockq
   <dl>
     <div><dt><h3>Study</h3></dt><dd>BA Architecture, Manchester School of Architecture. Year 3, 2026&ndash;27.<br>Before that, A-level 3D Design at Loreto College, 2021&ndash;23.</dd></div>
     <div><dt><h3>Toolkit</h3></dt><dd><div class="chips"><span>Revit</span><span>AutoCAD</span><span>Rhino</span><span>Lumion</span><span>InDesign</span><span>Photoshop</span><span>Model making</span><span>Hand drawing</span></div></dd></div>
-    <div><dt><h3>Full portfolios</h3></dt><dd>Every project links to its complete PDF on Google Drive.</dd></div>
+    <div><dt><h3>Full portfolios</h3></dt><dd>Every project links to its complete PDF, which opens in a new tab.</dd></div>
   </dl>
 </div></section>
 
@@ -333,6 +333,8 @@ const P = window.PROJECTS || [];
 const byId = Object.fromEntries(P.map(p => [p.id, p]));
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const drive = id => 'https://drive.google.com/file/d/' + id + '/view';
+const PDF_BASE = /github\.io$/.test(location.hostname) ? '' : 'https://raihanhussain530-maker.github.io/portfolio/';
+const fileUrl = f => f[2] ? PDF_BASE + f[2] : drive(f[1]);
 const collegeCap = n => /^(ss\d|hc3768|hc4008|p08-03)$/.test(n) ? 'AutoCAD drawing' : /^(ph\d|p07-)/.test(n) ? 'Primary research photo' : 'Photo';
 const pg = n => n.startsWith('college/') ? {t:'img/college/thumb/'+n.slice(8)+'.jpg', f:'img/college/full/'+n.slice(8)+'.jpg', c: collegeCap(n.slice(8))} : n.startsWith('hero/') ? {t:'img/'+n+'.jpg', f:'img/'+n+'.jpg', c: n.startsWith('hero/cafe-') ? 'Render' : 'Extract'} : {t:'img/thumb/'+n+'.jpg', f:'img/full/'+n+'.jpg', c:'Page '+parseInt(n.slice(-2),10)};
 const metaLine = p => [p.unit, p.year].filter(Boolean).join(' · ');
@@ -346,7 +348,7 @@ const tileHTML = (p, cls, ghost) => `
       <p class="meta rv fade" style="--d:40ms">${esc(metaLine(p))}</p>
       <h2 id="t-${p.id}" class="rv" style="--d:90ms">${esc(p.title)}</h2>
       <p class="sub rv" style="--d:210ms">${esc(p.short)}</p>
-      <div class="links rv" style="--d:300ms"><a class="btn" href="#${p.id}">Learn more<svg class="ar" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn line" href="${drive(p.files[0][1])}" target="_blank" rel="noopener">View portfolio<svg class="ar ext" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="links rv" style="--d:300ms"><a class="btn" href="#${p.id}">Learn more<svg class="ar" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn line" href="${fileUrl(p.files[0])}" target="_blank" rel="noopener">View portfolio<svg class="ar ext" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
     </div>
     <figure class="shot"><div class="frame" data-zoom><img src="img/${p.hero}.jpg" alt="${esc(p.alt)}" loading="lazy" decoding="async" style="object-position:${p.pos || 'center'}"></div></figure>
   </section>`;
@@ -479,7 +481,7 @@ function openProject(p) {
       <div class="facts">
         ${facts.map(([k, v]) => `<div><b>${k}</b><span>${esc(v)}</span></div>`).join('')}
         <div><b>Highlights</b><ul>${p.points.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
-        <div><b>Full portfolio</b><span class="files">${p.files.map(([l, id]) => `<a href="${drive(id)}" target="_blank" rel="noopener">${esc(l)}</a>`).join('')}</span></div>
+        <div><b>Full portfolio</b><span class="files">${p.files.map(f => `<a href="${fileUrl(f)}" target="_blank" rel="noopener">${esc(f[0])}</a>`).join('')}</span></div>
       </div>
     </div>
     ${gallery.length ? `<h3>From the portfolio</h3>

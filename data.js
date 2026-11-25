@@ -17,7 +17,7 @@ window.PROJECTS = [
     "Collages asking two simple questions: what makes Hull recognisable, and what makes it a healthier place to live?"
   ],
   pages: ['hero/infra', 'infra-3-1-01', 'infra-3-1-04', 'infra-3-1-06', 'infra-3-1-10', 'infra-3-1-16'],
-  files: [['INFRA 3.1 portfolio (PDF)', '1ADBO2xGBfdx6wDXXKmnqqbKu8MmszjLB']]
+  files: [['INFRA 3.1 portfolio (PDF, 6 MB)', '1ADBO2xGBfdx6wDXXKmnqqbKu8MmszjLB', 'pdf/infra-3-1-hull.pdf']]
 },
 {
   id: 'cafe-factory', group: 'feature', ghost: 'Cafe Factory',
@@ -37,7 +37,7 @@ window.PROJECTS = [
     "A full set of renders: café lounge, creative kitchen, education space and artisan living space"
   ],
   pages: ['hero/cafe-window', 'hero/cafe-exterior', 'studio-2-2-01', 'studio-2-2-09', 'studio-2-2-18', 'studio-2-2-21', 'studio-2-2-23', 'studio-2-2-24', 'studio-2-2-25', 'studio-2-2-26', 'studio-2-2-27', 'studio-2-2-28', 'studio-2-2-30'],
-  files: [['Studio 2.2 portfolio (PDF)', '1ti1OMdIX6Dc5lDVr-rtE-iqwl2ASk9Wf']]
+  files: [['Studio 2.2 portfolio (PDF, 13 MB)', '1ti1OMdIX6Dc5lDVr-rtE-iqwl2ASk9Wf', 'pdf/studio-2-2-cafe-factory.pdf']]
 },
 {
   id: 'castlefield', group: 'feature', ghost: 'Castlefield',
@@ -57,7 +57,7 @@ window.PROJECTS = [
     "A technical section and specification cutting through the centre, amphitheatre and lab"
   ],
   pages: ['studio-2-1-01', 'studio-2-1-03', 'studio-2-1-04', 'studio-2-1-22', 'studio-2-1-24', 'studio-2-1-26', 'studio-2-1-28', 'studio-2-1-30', 'studio-2-1-32', 'studio-2-1-34', 'studio-2-1-37'],
-  files: [['Studio 2.1 portfolio (PDF, large file)', '1sXM6YNGjSD7t9m1Y0AHkinK6uVLpsRIj']]
+  files: [['Studio 2.1 portfolio (PDF, 35 MB)', '1sXM6YNGjSD7t9m1Y0AHkinK6uVLpsRIj', 'pdf/studio-2-1-castlefield.pdf']]
 },
 {
   id: 'community-living', group: 'duo',
@@ -75,7 +75,7 @@ window.PROJECTS = [
     "A 1:100 model to test the timber cladding and how light falls between the neighbouring houses"
   ],
   pages: ['studio-1-2-01', 'studio-1-2-04', 'studio-1-2-05', 'studio-1-2-11', 'studio-1-2-12', 'studio-1-2-13', 'studio-1-2-16', 'studio-1-2-17', 'studio-1-2-18', 'studio-1-2-22'],
-  files: [['Studio 1.2 portfolio (PDF)', '1T843u1QD5A0y_jZeDVr-SNtmOAl0Cg9v']]
+  files: [['Studio 1.2 portfolio (PDF, 4 MB)', '1T843u1QD5A0y_jZeDVr-SNtmOAl0Cg9v', 'pdf/studio-1-2-community-living.pdf']]
 },
 {
   id: 'habitat-artefacts', group: 'duo',
@@ -93,7 +93,7 @@ window.PROJECTS = [
     "Site models, bubble diagrams and technical drawings at 1:50"
   ],
   pages: ['studio-1-1-14', 'studio-1-1-15', 'studio-1-1-20', 'studio-1-1-26', 'studio-1-1-29', 'studio-1-1-34', 'studio-1-1-36', 'studio-1-1-40', 'studio-1-1-41', 'studio-1-1-42'],
-  files: [['Studio 1.1 presentation (PDF)', '1-zOOdGlg_ee-gXH1Bk9gll-KB-sB0RXW']]
+  files: [['Studio 1.1 presentation (PDF, 11 MB)', '1-zOOdGlg_ee-gXH1Bk9gll-KB-sB0RXW', 'pdf/studio-1-1-presentation.pdf']]
 },
 {
   id: 'tech-2', group: 'tech',
@@ -111,7 +111,7 @@ window.PROJECTS = [
     "Wind, sun path and construction analysis of Piggotts Hall"
   ],
   pages: ['tech2-03', 'tech2-04', 'tech2-06', 'tech2-07', 'tech2-09', 'tech2-10', 'tech2-14', 'tech2-16'],
-  files: [['Technologies 2 portfolio (PDF)', '1FVyVBH2V6H47NJFYQlunQmalCjvktoRR']]
+  files: [['Technologies 2 portfolio (PDF, 5 MB)', '1FVyVBH2V6H47NJFYQlunQmalCjvktoRR', 'pdf/technologies-2.pdf']]
 },
 {
   id: 'integrated-tech', group: 'tech',
@@ -129,7 +129,7 @@ window.PROJECTS = [
     "Detailed sections and a specification of the build-up"
   ],
   pages: ['ba2-tech-partc-01', 'ba2-tech-partc-02', 'ba2-tech-partc-03', 'ba2-tech-partc-04', 'ba2-tech-partc-05'],
-  files: [['Integrated Technologies Part C (PDF)', '1ALPzU4_mhSAXNFhVFZgL3U-Fr595Fy3a']]
+  files: [['Integrated Technologies Part C (PDF, under 1 MB)', '1ALPzU4_mhSAXNFhVFZgL3U-Fr595Fy3a', 'pdf/integrated-technologies-part-c.pdf']]
 },
 {
   id: 'tech-1', group: 'tech',
@@ -147,7 +147,7 @@ window.PROJECTS = [
     "BaleHaus analysed for climate, fire safety, thermal and acoustic performance"
   ],
   pages: ['tech1-ac-06', 'tech1-ac-10', 'tech1-ac-12', 'tech1-ac-17', 'tech1-ac-21', 'tech1-ac-25', 'tech1-ac-29', 'tech1-ac-31', 'tech1-ac-35', 'tech1-ac-39', 'tech1-ac-44'],
-  files: [['Technologies 1, Parts A and C (PDF)', '1Aqlr6PajaHkJ7pTPiDktYcKjlbPFvXQ1'], ['Spanning Structures (PDF)', '15TCez-FiIxamqlbJwP3p3IURZ4lSCKy9'], ['Structural Stability (PDF)', '1H9e7ilHEm-6rszRgcv7TfUA2If2W_xXB']]
+  files: [['Technologies 1, Parts A and C (PDF, 12 MB)', '1Aqlr6PajaHkJ7pTPiDktYcKjlbPFvXQ1', 'pdf/technologies-1-parts-a-c.pdf'], ['Spanning Structures (PDF, under 1 MB)', '15TCez-FiIxamqlbJwP3p3IURZ4lSCKy9', 'pdf/spanning-structures.pdf'], ['Structural Stability (PDF, under 1 MB)', '1H9e7ilHEm-6rszRgcv7TfUA2If2W_xXB', 'pdf/structural-stability.pdf']]
 },
 {
   id: 'pavilion-library', group: 'tech',
@@ -165,7 +165,7 @@ window.PROJECTS = [
     "Sun path and noise analysis around the tram stop"
   ],
   pages: ['tech1-partc-01', 'tech1-partc-02', 'tech1-partc-03', 'tech1-partc-04'],
-  files: [['Technologies 1, Part C (PDF)', '1_sJMEXp6iLfhuTnGLkMVDJa50fGI4jbO']]
+  files: [['Technologies 1, Part C (PDF, 4 MB)', '1_sJMEXp6iLfhuTnGLkMVDJa50fGI4jbO', 'pdf/technologies-1-part-c-pavilion.pdf']]
 },
 {
   id: 'sustainability', group: 'tech',
@@ -183,7 +183,7 @@ window.PROJECTS = [
     "These studies fed into our group models in Technologies 1"
   ],
   pages: ['es-takern-01', 'es-alberta-01', 'es-bosjes-01', 'es-nelson-atkins-01'],
-  files: [['Naturum Tåkern (PDF)', '1zRHAEikLNLiTgl0_4UXx3IEpfKh_PWmY'], ['Art Gallery of Alberta (PDF)', '1hgfvkifm0PiZjqDgOy6viVHA6a_A4vq3'], ['Bosjes Chapel (PDF)', '1Gkaoe1CL5Sye4WdU3ULU1svxgr2iXQls'], ['Nelson-Atkins Museum Extension (PDF)', '1B7G3JuysQLTcvAUApP3rZiFfbm4yVraO']]
+  files: [['Naturum Tåkern (PDF, under 1 MB)', '1zRHAEikLNLiTgl0_4UXx3IEpfKh_PWmY', 'pdf/naturum-takern.pdf'], ['Art Gallery of Alberta (PDF, under 1 MB)', '1hgfvkifm0PiZjqDgOy6viVHA6a_A4vq3', 'pdf/art-gallery-of-alberta.pdf'], ['Bosjes Chapel (PDF, under 1 MB)', '1Gkaoe1CL5Sye4WdU3ULU1svxgr2iXQls', 'pdf/bosjes-chapel.pdf'], ['Nelson-Atkins Museum Extension (PDF, under 1 MB)', '1B7G3JuysQLTcvAUApP3rZiFfbm4yVraO', 'pdf/nelson-atkins-extension.pdf']]
 },
 {
   id: 'beyond-growth', group: 'hum',
@@ -201,7 +201,7 @@ window.PROJECTS = [
     "A critical look at the limits of degrowth"
   ],
   pages: ['humanities-2-2-02', 'humanities-2-2-03', 'humanities-2-2-04', 'humanities-2-2-05', 'humanities-2-2-08'],
-  files: [['Humanities 2.2 essay (PDF)', '1_7aOjzGdq3Ej4DUrZhpoe3WZu32iQnXl']]
+  files: [['Humanities 2.2 essay (PDF, 1 MB)', '1_7aOjzGdq3Ej4DUrZhpoe3WZu32iQnXl', 'pdf/humanities-2-2-essay.pdf']]
 },
 {
   id: 'tracing-the-city', group: 'hum',
@@ -219,7 +219,7 @@ window.PROJECTS = [
     "A concept map linking the readings together"
   ],
   pages: ['tracing-the-city-01', 'tracing-the-city-02', 'tracing-the-city-03', 'tracing-the-city-04', 'tracing-the-city-05'],
-  files: [['Tracing the City (PDF)', '1igNZBVBuSNH_gnB8R2Bq1m1j0iCT_VC2']]
+  files: [['Tracing the City (PDF, 1 MB)', '1igNZBVBuSNH_gnB8R2Bq1m1j0iCT_VC2', 'pdf/tracing-the-city.pdf']]
 },
 {
   id: 'thinking-through-drawing', group: 'hum',
@@ -237,7 +237,7 @@ window.PROJECTS = [
     "A field sketchbook of Manchester’s city centre"
   ],
   pages: ['thinking-through-drawing-01', 'thinking-through-drawing-03', 'thinking-through-drawing-05', 'thinking-through-drawing-07', 'thinking-through-drawing-09', 'thinking-through-drawing-10', 'thinking-through-drawing-13'],
-  files: [['Thinking Through Drawing (PDF)', '1JGNdeppec4HEXaROv6PluTn_tYEv89T_']]
+  files: [['Thinking Through Drawing (PDF, 3 MB)', '1JGNdeppec4HEXaROv6PluTn_tYEv89T_', 'pdf/thinking-through-drawing.pdf']]
 },
 {
   id: 'droplets', group: 'early',
@@ -255,7 +255,7 @@ window.PROJECTS = [
     "Proposed sections and a plan for Terminal 2"
   ],
   pages: ['client-presentation-01', 'client-presentation-02', 'client-presentation-04', 'client-presentation-12', 'client-presentation-16', 'client-presentation-20', 'client-presentation-22', 'client-presentation-24', 'droplets-01', 'droplets-05', 'droplets-07', 'droplets-08', 'droplets-09'],
-  files: [['Team presentation (PDF)', '1IMTZWZvxQVESw-AbPEaPhrHNodPyTrle'], ['Re-Imaging Droplets, individual (PDF)', '1xTC-Jezy8f29PrzO7vGNPFSzPiVzmMca']]
+  files: [['Team presentation (PDF, 6 MB)', '1IMTZWZvxQVESw-AbPEaPhrHNodPyTrle', 'pdf/droplets-team-presentation.pdf'], ['Re-Imaging Droplets, individual (PDF, 2 MB)', '1xTC-Jezy8f29PrzO7vGNPFSzPiVzmMca', 'pdf/droplets-individual.pdf']]
 },
 {
   id: 'folly', group: 'early',
@@ -273,7 +273,7 @@ window.PROJECTS = [
     "A concept model and a 1:100 final model"
   ],
   pages: ['folly-01', 'folly-04', 'folly-06', 'folly-10', 'folly-12', 'folly-13', 'folly-16', 'folly-18'],
-  files: [['Folly portfolio (PDF)', '158PuCM0vE9tziHy30xbZYuwRnYnXzY3R']]
+  files: [['Folly portfolio (PDF, 4 MB)', '158PuCM0vE9tziHy30xbZYuwRnYnXzY3R', 'pdf/garden-folly.pdf']]
 },
 {
   id: 'act-assist', group: 'early',
@@ -291,7 +291,7 @@ window.PROJECTS = [
     "A kit of parts and a scale drawing"
   ],
   pages: ['taxidermist-01', 'taxidermist-05', 'taxidermist-06', 'taxidermist-08', 'taxidermist-09', 'taxidermist-11', 'taxidermist-12'],
-  files: [['ACT Assist portfolio (PDF)', '1DjJ2BGWE4quauZd-wzJtxVCPYen3SCAb']]
+  files: [['ACT Assist portfolio (PDF, 3 MB)', '1DjJ2BGWE4quauZd-wzJtxVCPYen3SCAb', 'pdf/act-assist.pdf']]
 },
 {
   id: 'communication', group: 'early',
@@ -309,7 +309,7 @@ window.PROJECTS = [
     "Light-and-shade models photographed in colour"
   ],
   pages: ['comms-01', 'comms-02', 'comms-04', 'comms-06', 'comms-07', 'comms-10', 'comms-12', 'comms-13'],
-  files: [['Communication & Presentation Techniques (PDF)', '12461ElOnI09xjpiP4ND3voTbniXE_zVm']]
+  files: [['Communication & Presentation Techniques (PDF, 7 MB)', '12461ElOnI09xjpiP4ND3voTbniXE_zVm', 'pdf/communication-presentation-techniques.pdf']]
 },
 {
   id: 'ppd', group: 'early',
@@ -327,7 +327,7 @@ window.PROJECTS = [
     "Industry talks and work experience"
   ],
   pages: ['ppd-02', 'ppd-03', 'ppd-04', 'ppd-05', 'ppd-06', 'ppd-07', 'ppd-outside-01', 'ppd-outside-02', 'ppd-outside-03'],
-  files: [['Inside report and journal (PDF)', '1N_7vyV4oTJ9OwyycdmETNoBApju6YDSB'], ['Outside journal (PDF)', '1Ij7dpQ8Ecph8Ew2XGkx6ZabCB5WfjQRr']]
+  files: [['Inside report and journal (PDF, 3 MB)', '1N_7vyV4oTJ9OwyycdmETNoBApju6YDSB', 'pdf/ppd-inside-report-journal.pdf'], ['Outside journal (PDF, 3 MB)', '1Ij7dpQ8Ecph8Ew2XGkx6ZabCB5WfjQRr', 'pdf/ppd-outside-journal.pdf']]
 
 },
 {
@@ -348,7 +348,7 @@ window.PROJECTS = [
     "Arched windows and front balustrades repeated symmetrically on both wings"
   ],
   pages: ['college/p08-06', 'college/p08-07', 'college/p08-05', 'college/p08-08', 'college/p08-03', 'college/ss1', 'college/ss2', 'college/ss3', 'college/ss4', 'college/ss5'],
-  files: [['Final piece (PDF)', '1PZy4FmwxeeKcl2KuQf-pAstMErEJBkKJ']]
+  files: [['Final piece (PDF, 6 MB)', '1PZy4FmwxeeKcl2KuQf-pAstMErEJBkKJ', 'pdf/college-final-piece.pdf']]
 },
 {
   id: 'apartment-block', group: 'college-duo',
@@ -368,7 +368,7 @@ window.PROJECTS = [
     "A roof garden and autumn-toned landscaping"
   ],
   pages: ['college/rt7151', 'college/rt7152', 'college/rt6929', 'college/sp6833', 'college/sp6814', 'college/sp6836', 'college/p05-00', 'college/rt7394'],
-  files: [['Final outcome (PDF)', '1yQuPUNXeYMGnUvUtPuWqvrC754rLR-mA']]
+  files: [['Final outcome (PDF, 6 MB)', '1yQuPUNXeYMGnUvUtPuWqvrC754rLR-mA', 'pdf/college-final-outcome.pdf']]
 },
 {
   id: 'napier-kahn', group: 'college-duo',
@@ -388,7 +388,7 @@ window.PROJECTS = [
     "Kahn studies of the Bangladesh Parliament Building and the Fisher House"
   ],
   pages: ['college/sp5920', 'college/sp5755', 'college/sp5834', 'college/sp5918', 'college/sp6605', 'college/hc3768', 'college/hc4008', 'college/p02-19', 'college/p02-21', 'college/p02-23', 'college/p02-24'],
-  files: [['Artist research (PDF)', '13fcVvaiQgSJArSsLfPXUqk7KwvdYHYrB']]
+  files: [['Artist research (PDF, 10 MB)', '13fcVvaiQgSJArSsLfPXUqk7KwvdYHYrB', 'pdf/college-artist-research.pdf']]
 },
 {
   id: 'intro-3d', group: 'college',
@@ -408,7 +408,7 @@ window.PROJECTS = [
     "A layered tape measure, my first AutoCAD and laser-cut model"
   ],
   pages: ['college/hc2837', 'college/hc2876', 'college/hc2880', 'college/hc2914', 'college/hc2916', 'college/p01-28', 'college/p01-29', 'college/hc3539', 'college/hc3538', 'college/hc3240', 'college/p01-32', 'college/p01-35'],
-  files: [['Introduction (PDF)', '1Vx2yKy19e0UI4JxHOVwVnyPM25Zs2euu']]
+  files: [['Introduction (PDF, 9 MB)', '1Vx2yKy19e0UI4JxHOVwVnyPM25Zs2euu', 'pdf/college-introduction.pdf']]
 },
 {
   id: 'window-experiments', group: 'college',
@@ -426,7 +426,7 @@ window.PROJECTS = [
     "Façade studies that led into the apartment block"
   ],
   pages: ['college/sp6542', 'college/sp6543', 'college/sp6476', 'college/sp6477', 'college/sp6540', 'college/sp6541', 'college/sp6604', 'college/ph01', 'college/ph05', 'college/ph10', 'college/ph13'],
-  files: [['Experimentation and development (PDF)', '1b973czKyUl8M560IAdvivb3YfXt3wZ0p']]
+  files: [['Experimentation and development (PDF, 4 MB)', '1b973czKyUl8M560IAdvivb3YfXt3wZ0p', 'pdf/college-experimentation-development.pdf']]
 },
 {
   id: 'barn-houses', group: 'college',
@@ -446,7 +446,7 @@ window.PROJECTS = [
     "Hudson Fieldhouse, Mowery Marsh Architects: upstate New York"
   ],
   pages: [],
-  files: [['Related study (PDF)', '1wate9izX8doQyLDd8PoWYFb5BT6Bu-XY']]
+  files: [['Related study (PDF, 7 MB)', '1wate9izX8doQyLDd8PoWYFb5BT6Bu-XY', 'pdf/college-related-study.pdf']]
 },
 {
   id: 'exam-research', group: 'college',
@@ -465,6 +465,6 @@ window.PROJECTS = [
     "Primary photos of the Sunlight House, Manchester"
   ],
   pages: ['college/p06-04', 'college/p06-06', 'college/p06-07', 'college/p06-12', 'college/p06-13', 'college/p07-00', 'college/p07-01'],
-  files: [['Artist research, exam (PDF)', '13SnVSvq-xC9Q6GB1sNB9ijobZCpkXvi1'], ['Experimentation and development, exam (PDF)', '1xlMM6HjiPG-R0AmT7MUJvm1tyngQmo_V']]
+  files: [['Artist research, exam (PDF, 3 MB)', '13SnVSvq-xC9Q6GB1sNB9ijobZCpkXvi1', 'pdf/college-exam-artist-research.pdf'], ['Experimentation and development, exam (PDF, 5 MB)', '1xlMM6HjiPG-R0AmT7MUJvm1tyngQmo_V', 'pdf/college-exam-experimentation.pdf']]
 }
 ];
